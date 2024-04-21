@@ -1,0 +1,63 @@
+                          • Cycles and Loops •
+• Cycles are very useful for creating maps or all sorts of functions •
+• Here are basic examples of cycles •
+
+a – Min Number 
+b – Max Number
+
+for i = a, b do
+print("text")
+end -- repeat script 
+
+for i = a, b do
+  wait(1)
+ print("text")
+end -- repeat script with delay
+
+while wait(1) do
+print("text")
+end -- endless cycle
+
+while true do
+  wait(1) -- it is necessary
+ print("text")
+end -- endless cycle which can be stopped replacing true on false
+
+if c == 1 then
+-- put script 
+end -- if c is equal to 1 then the script is activated
+
+if c == 1 then
+-- put script1
+else -- opposite
+-- put script2
+end -- adds the opposite value if q is not equal to 1
+
+if c == 1 and d == 1 then
+-- put script
+end -- If с and d will be equal to 1 then the script will run
+
+if c == 1 or d == 1 then
+-- put script
+end -- if c or d is equal to 1 then the script will run
+
+• You can do the same with other signs: > and < •
+• Using these cycles you can create a mini key system •
+
+local Pas = 1
+
+if Pas == 5 then
+ print("Verify")
+  else
+ warn("wrong")
+end
+
+• Also using "for" you can make a script that iterates over certain things•
+
+for _, part in ipairs(workspace:GetDescendants()) do
+      if part:IsA("BasePart") then
+        print(part.Name)
+      end
+end
+
+• This script iterates through all objects and displays their names in the console •
